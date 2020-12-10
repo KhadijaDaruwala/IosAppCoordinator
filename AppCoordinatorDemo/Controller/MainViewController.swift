@@ -10,6 +10,7 @@ import UIKit
 class MainViewController: UIViewController, ControllerInstance {
 
     weak var coordinator: MainCoordinator?
+    @IBOutlet var accountType: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class MainViewController: UIViewController, ControllerInstance {
     }
     
     @IBAction func buttonCreateAccountClicked(_ sender: Any) {
-        coordinator?.createAccount()
+        coordinator?.createAccount(to: accountType.selectedSegmentIndex)
     }
     
     @IBAction func buttonProfileClicked(_ sender: Any) {

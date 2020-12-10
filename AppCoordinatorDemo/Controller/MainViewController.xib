@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="AppCoordinatorDemo" customModuleProvider="target">
             <connections>
+                <outlet property="accountType" destination="cS5-72-NJ8" id="M2G-ha-reD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -45,7 +46,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS8-4q-NJZ">
-                    <rect key="frame" x="100" y="464" width="214" height="40"/>
+                    <rect key="frame" x="100" y="485" width="214" height="40"/>
                     <color key="backgroundColor" red="1" green="0.62323196216025423" blue="0.65094324319813746" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="X2e-ss-egH"/>
@@ -57,6 +58,13 @@
                         <action selector="buttonProfileClicked:" destination="-1" eventType="touchUpInside" id="lgT-jr-AEc"/>
                     </connections>
                 </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cS5-72-NJ8">
+                    <rect key="frame" x="133.5" y="424" width="147" height="32"/>
+                    <segments>
+                        <segment title="Gold"/>
+                        <segment title="Platinum"/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,14 +73,16 @@
                 <constraint firstItem="hvs-GL-zdo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Dt-uo-GtO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ca7-j7-e4v" secondAttribute="trailing" constant="100" id="6zH-f7-geA"/>
                 <constraint firstItem="hvs-GL-zdo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="85h-Kk-WR4"/>
+                <constraint firstItem="oS8-4q-NJZ" firstAttribute="top" secondItem="cS5-72-NJ8" secondAttribute="bottom" constant="30" id="Dxg-aD-0Dj"/>
+                <constraint firstItem="cS5-72-NJ8" firstAttribute="top" secondItem="ca7-j7-e4v" secondAttribute="bottom" constant="5" id="Fsy-Ea-8qS"/>
                 <constraint firstItem="ca7-j7-e4v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GFg-Il-2pp"/>
                 <constraint firstItem="oS8-4q-NJZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gxd-Nu-pFQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oS8-4q-NJZ" secondAttribute="trailing" constant="100" id="OGY-Yl-pR2"/>
                 <constraint firstItem="ca7-j7-e4v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="fpI-VB-RuR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hvs-GL-zdo" secondAttribute="trailing" constant="100" id="jrv-zd-mbo"/>
-                <constraint firstItem="oS8-4q-NJZ" firstAttribute="top" secondItem="ca7-j7-e4v" secondAttribute="bottom" constant="45" id="nAK-Ag-ymR"/>
                 <constraint firstItem="hvs-GL-zdo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="250" id="srD-Yg-ERW"/>
                 <constraint firstItem="oS8-4q-NJZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="t29-kK-UNX"/>
+                <constraint firstItem="cS5-72-NJ8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zjT-lz-AoJ"/>
             </constraints>
             <point key="canvasLocation" x="116" y="121"/>
         </view>

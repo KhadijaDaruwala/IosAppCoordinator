@@ -30,9 +30,10 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate{
         child.start()
     }
     
-    func createAccount(){
+    func createAccount(to accountType: Int){
         let vc = CreateAccountViewController.instantiate()
         vc.coordinator = self
+        vc.accountType = accountType
         navigationController.pushViewController(vc, animated: false)
     }
     

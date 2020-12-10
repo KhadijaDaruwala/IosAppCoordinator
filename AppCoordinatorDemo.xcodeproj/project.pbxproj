@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183A7E302582791E00A7EB1D /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A7E2F2582791E00A7EB1D /* MainTabbarController.swift */; };
 		18F8D230258203FE00CF0ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8D22F258203FE00CF0ED2 /* AppDelegate.swift */; };
 		18F8D239258203FE00CF0ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F8D238258203FE00CF0ED2 /* Assets.xcassets */; };
 		18F8D23C258203FE00CF0ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F8D23A258203FE00CF0ED2 /* LaunchScreen.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183A7E2F2582791E00A7EB1D /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		18F8D22C258203FE00CF0ED2 /* AppCoordinatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCoordinatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F8D22F258203FE00CF0ED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F8D238258203FE00CF0ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		18F8D2882582426B00CF0ED2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				183A7E2F2582791E00A7EB1D /* MainTabbarController.swift */,
 				18F8D24F258230EF00CF0ED2 /* MainViewController.swift */,
 				18F8D250258230EF00CF0ED2 /* MainViewController.xib */,
 				18F8D268258233DC00CF0ED2 /* BuyViewController.swift */,
@@ -195,6 +198,7 @@
 			files = (
 				18F8D26F258233EB00CF0ED2 /* CreateAccountViewController.swift in Sources */,
 				18F8D230258203FE00CF0ED2 /* AppDelegate.swift in Sources */,
+				183A7E302582791E00A7EB1D /* MainTabbarController.swift in Sources */,
 				18F8D27F25823CD400CF0ED2 /* ProfileViewController.swift in Sources */,
 				18F8D246258206CA00CF0ED2 /* Coordinator.swift in Sources */,
 				18F8D27825823AE400CF0ED2 /* BuyCoordinator.swift in Sources */,

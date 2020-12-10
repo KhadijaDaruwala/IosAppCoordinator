@@ -22,4 +22,8 @@ class MainViewController: UIViewController, ControllerInstance {
     @IBAction func buttonCreateAccountClicked(_ sender: Any) {
         coordinator?.createAccount()
     }
+    
+    @IBAction func buttonProfileClicked(_ sender: Any) {
+        coordinator?.viewProfile()
+    }
 }

@@ -24,7 +24,9 @@ class BuyCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func didFinishBuying(){
-        parentCoordinator?.childDidFinish(self)
+    func makePayment(){
+        let vc = PaymentViewController.instantiate()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: false)
     }
 }

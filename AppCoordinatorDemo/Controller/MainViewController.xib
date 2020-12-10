@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca7-j7-e4v">
-                    <rect key="frame" x="100" y="437" width="214" height="40"/>
+                    <rect key="frame" x="100" y="379" width="214" height="40"/>
                     <color key="backgroundColor" red="0.92433242675134564" green="0.78218963367026018" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="lUy-uS-Mnr"/>
@@ -32,7 +32,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvs-GL-zdo">
-                    <rect key="frame" x="100" y="342" width="214" height="40"/>
+                    <rect key="frame" x="100" y="294" width="214" height="40"/>
                     <color key="backgroundColor" red="0.60392156860000001" green="0.49803921569999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Ihn-5G-Qfe"/>
@@ -44,18 +44,35 @@
                         <action selector="buttonBuyClicked:" destination="-1" eventType="touchUpInside" id="96r-wA-eEI"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS8-4q-NJZ">
+                    <rect key="frame" x="100" y="464" width="214" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.62323196216025423" blue="0.65094324319813746" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="X2e-ss-egH"/>
+                    </constraints>
+                    <state key="normal" title="My Profile">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonProfileClicked:" destination="-1" eventType="touchUpInside" id="lgT-jr-AEc"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="ca7-j7-e4v" firstAttribute="top" secondItem="hvs-GL-zdo" secondAttribute="bottom" constant="55" id="1dX-eA-VPV"/>
+                <constraint firstItem="ca7-j7-e4v" firstAttribute="top" secondItem="hvs-GL-zdo" secondAttribute="bottom" constant="45" id="1dX-eA-VPV"/>
                 <constraint firstItem="hvs-GL-zdo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Dt-uo-GtO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ca7-j7-e4v" secondAttribute="trailing" constant="100" id="6zH-f7-geA"/>
                 <constraint firstItem="hvs-GL-zdo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="85h-Kk-WR4"/>
                 <constraint firstItem="ca7-j7-e4v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GFg-Il-2pp"/>
+                <constraint firstItem="oS8-4q-NJZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gxd-Nu-pFQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oS8-4q-NJZ" secondAttribute="trailing" constant="100" id="OGY-Yl-pR2"/>
                 <constraint firstItem="ca7-j7-e4v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="fpI-VB-RuR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hvs-GL-zdo" secondAttribute="trailing" constant="100" id="jrv-zd-mbo"/>
-                <constraint firstItem="hvs-GL-zdo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="298" id="srD-Yg-ERW"/>
+                <constraint firstItem="oS8-4q-NJZ" firstAttribute="top" secondItem="ca7-j7-e4v" secondAttribute="bottom" constant="45" id="nAK-Ag-ymR"/>
+                <constraint firstItem="hvs-GL-zdo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="250" id="srD-Yg-ERW"/>
+                <constraint firstItem="oS8-4q-NJZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="t29-kK-UNX"/>
             </constraints>
             <point key="canvasLocation" x="116" y="121"/>
         </view>

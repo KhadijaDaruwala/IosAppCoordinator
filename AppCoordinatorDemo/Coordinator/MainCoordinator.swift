@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class MainCoordinator: Coordinator{
+class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate{
     var childCoordinators: [Coordinator] = [Coordinator]()
     var navigationController: UINavigationController
     
@@ -17,6 +17,7 @@ class MainCoordinator: Coordinator{
     }
     
     func start() {
+        navigationController.delegate = self
         let vc = MainViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
@@ -35,12 +36,39 @@ class MainCoordinator: Coordinator{
         navigationController.pushViewController(vc, animated: false)
     }
     
+    func viewProfile(){
+        let child = ProfileCoordinator(navigationController: navigationController)
+        child.parentCoordinator = self
+        childCoordinators.append(child)
+        child.start()
+    }
+    
     func childDidFinish(_ child: Coordinator?) {
         for (index, coordinator) in childCoordinators.enumerated() {
             if coordinator === child {
                 childCoordinators.remove(at: index)
                 break
             }
+        }
+    }
+    
+    //Navigtaion Controller Delegate Method
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        print("Child Coordinators: \(childCoordinators)")
+        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
+            return
+        }
+        
+        if navigationController.viewControllers.contains(fromViewController){
+            return
+        }
+        
+        if let buyViewController = fromViewController as? BuyViewController {
+            childDidFinish(buyViewController.coordinator)
+        }
+        
+        if let paymentController = fromViewController as? PaymentViewController {
+            childDidFinish(paymentController.coordinator)
         }
     }
 }

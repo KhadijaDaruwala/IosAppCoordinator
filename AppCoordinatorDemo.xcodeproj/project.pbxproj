@@ -19,6 +19,7 @@
 		18F8D26B258233DC00CF0ED2 /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F8D269258233DC00CF0ED2 /* BuyViewController.xib */; };
 		18F8D26F258233EB00CF0ED2 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8D26D258233EB00CF0ED2 /* CreateAccountViewController.swift */; };
 		18F8D270258233EB00CF0ED2 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F8D26E258233EB00CF0ED2 /* CreateAccountViewController.xib */; };
+		18F8D27825823AE400CF0ED2 /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8D27725823AE400CF0ED2 /* BuyCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		18F8D269258233DC00CF0ED2 /* BuyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
 		18F8D26D258233EB00CF0ED2 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		18F8D26E258233EB00CF0ED2 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		18F8D27725823AE400CF0ED2 /* BuyCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				18F8D22F258203FE00CF0ED2 /* AppDelegate.swift */,
 				18F8D245258206CA00CF0ED2 /* Coordinator.swift */,
 				18F8D24B25822F7900CF0ED2 /* MainCoordinator.swift */,
+				18F8D27725823AE400CF0ED2 /* BuyCoordinator.swift */,
 				18F8D24825822E9E00CF0ED2 /* ControllerInstance.swift */,
 				18F8D24F258230EF00CF0ED2 /* MainViewController.swift */,
 				18F8D250258230EF00CF0ED2 /* MainViewController.xib */,
@@ -160,6 +163,7 @@
 				18F8D26F258233EB00CF0ED2 /* CreateAccountViewController.swift in Sources */,
 				18F8D230258203FE00CF0ED2 /* AppDelegate.swift in Sources */,
 				18F8D246258206CA00CF0ED2 /* Coordinator.swift in Sources */,
+				18F8D27825823AE400CF0ED2 /* BuyCoordinator.swift in Sources */,
 				18F8D251258230EF00CF0ED2 /* MainViewController.swift in Sources */,
 				18F8D24C25822F7900CF0ED2 /* MainCoordinator.swift in Sources */,
 				18F8D24925822E9E00CF0ED2 /* ControllerInstance.swift in Sources */,
